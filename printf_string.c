@@ -8,22 +8,21 @@
 
 int printf_string(char *s)
 {
-        int i, str_len;
+	int i, str_len;
 
-        if (s == NULL)
-        {
-                s = "(null)";
-                str_len = _strlen(s);
-                for (i = 0; i < str_len; i++)
-                        _putchar(s[i]);
-                return (str_len);
-        }
-        else
-        {
-                str_len = _strlen(s);
-                for (i = 0; i < str_len; i++)
-                        _putchar(s[i]);
-                return (str_len);
-        }
+	if (s == NULL)
+	{
+		s = "(null)";
+		str_len = _strlen(s);
+		for (i = 0; i < str_len; i++)
+			_putchar(s[i]);
+		return (str_len);
+	}
+	else
+	{
+		str_len = _strlen(s);
+		for (i = 0; i < str_len; i++)
+			_putchar(s[i]);
+		return (str_len);
+	}
 }
-

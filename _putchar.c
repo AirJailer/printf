@@ -10,10 +10,9 @@
 
 int _putchar(char c)
 {
-        int len = 0;
+	int len = 0;
 
-        write(1, &c, 1);
-        len++;
-        return (len);
+	write(1, &c, 1);
+	len++;
+	return (len);
 }
-

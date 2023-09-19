@@ -2,15 +2,15 @@
 
 /**
  * printf_char - prints a char.
- * @val: arguments.
+ * @args: arguments.
  * Return: 1.
  */
 
-int printf_char(va_list val)
+int printf_char(va_list args)
 {
 	char s;
 
-	s = va_arg(val, int);
+	s = va_arg(args, int);
 	_putchar(s);
 	return (1);
 }

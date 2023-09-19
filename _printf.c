@@ -9,7 +9,7 @@
 int _printf(const char *format, ...)
 {
 	format_match m[] = {
-		{"%s", printf_string}, {"%c", printf_char}, {"%%", printf_percent},
+		{"%s", printf_string}, {"%c", printf_char},
 		{"%i", printf_int}, {"%d", printf_dec}, {"%b", printf_binary},
 		{"%u", printf_unsigned}, {"%p", printf_pointer}, {"%o", printf_oct},
 		{"%x", printf_hex}, {"%X", printf_HEX_}
@@ -25,7 +25,15 @@ int _printf(const char *format, ...)
 Here:
 	while (format[i] != '\0')
 	{
-		j = 10;
+		j = 9;
+
+		if (format[i] == '%' && format[i + 1] == '%')
+		{
+			_putchar(37);
+			i = i + 2;
+			len++;
+		}
+
 		while (j >= 0)
 		{
 			if (m[j].id[0] == format[i] && m[j].id[1] == format[i + 1])

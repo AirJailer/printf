@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 	format_match m[] = {
 		{"%s", printf_string}, {"%c", printf_char}, {"%%", printf_percent},
 		{"%i", printf_int}, {"%d", printf_dec}, {"%b", printf_binary},
-		, {"%u", printf_unsigned}, {"%p", printf_pointer}, {"%p", printf_oct}
+		 {"%u", printf_unsigned}, {"%p", printf_pointer}, {"%p", printf_oct}
 		, {"%p", printf_hex}, {"%p", printf_HEX_}
 	};
 

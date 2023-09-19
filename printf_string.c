@@ -6,23 +6,25 @@
  * Return: the length of string
  */
 
-int printf_string(char *s)
+int printf_string(va_list args)
 {
-	int i, str_len;
+	char *s;
+	int i, len;
 
+	s = va_arg(args, char *);
 	if (s == NULL)
 	{
 		s = "(null)";
-		str_len = _strlen(s);
-		for (i = 0; i < str_len; i++)
+		len = _strlen(s);
+		for (i = 0; i < len; i++)
 			_putchar(s[i]);
-		return (str_len);
+		return (len);
 	}
 	else
 	{
-		str_len = _strlen(s);
-		for (i = 0; i < str_len; i++)
+		len = _strlen(s);
+		for (i = 0; i < len; i++)
 			_putchar(s[i]);
-		return (str_len);
+		return (len);
 	}
 }

@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdlib.h>
-
+#include <limits.h>
 
 /**
  * struct format - match the conversion specifiers for printf
@@ -22,9 +22,9 @@ typedef struct format
 } format_match;
 
 
-int _putchar(char c);
+int _putchar(int c);
 int _strlen(char *s);
-int printf_string(char *s);
+int printf_string(va_list args);
 int printf_char(va_list args);
 int printf_percent(void);
 int printf_int(va_list args);

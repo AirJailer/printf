@@ -4,7 +4,7 @@
 /**
  * printf_hex_sec - prints an hexgecimal number.
  * @num: arguments.
- * Return: counter.
+ * Return:An integer value - counter.
  */
 
 int printf_hex_sec(unsigned long int num)
@@ -16,7 +16,7 @@ int printf_hex_sec(unsigned long int num)
 
 	while (num / 16 != 0)
 	{
-		num /= 16;
+		num = num/16;
 		counter++;
 	}
 	counter++;
@@ -25,7 +25,7 @@ int printf_hex_sec(unsigned long int num)
 	for (i = 0; i < counter; i++)
 	{
 		array[i] = temp % 16;
-		temp /= 16;
+		temp = temp/16;
 	}
 	for (i = counter - 1; i >= 0; i--)
 	{

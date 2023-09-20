@@ -2,9 +2,9 @@
 
 
 /**
- * printf_hex - prints an hexdecimal number.
+ * printf_hex - prints an hexadecimal number.
  * @args: arguments.
- * Return: counter.
+ * Return: an interger value- counter.
  */
 
 int printf_hex(va_list args)
@@ -17,7 +17,7 @@ int printf_hex(va_list args)
 
 	while (num / 16 != 0)
 	{
-		num /= 16;
+		num = num/16;
 		counter++;
 	}
 	counter++;
@@ -26,7 +26,7 @@ int printf_hex(va_list args)
 	for (i = 0; i < counter; i++)
 	{
 		array[i] = temp % 16;
-		temp /= 16;
+		temp = temp/16;
 	}
 	for (i = counter - 1; i >= 0; i--)
 	{

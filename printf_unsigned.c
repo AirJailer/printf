@@ -2,7 +2,7 @@
 
 
 /**
- * printf_unsigned - prints integer
+ * printf_unsigned - prints an integer
  * @args: argument to print
  * Return: number of characters printed
  */

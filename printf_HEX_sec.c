@@ -2,9 +2,9 @@
 
 
 /**
- * printf_HEX_sec - prints an hexgecimal number.
+ * printf_HEX_sec - prints an hexadecimal number.
  * @num: number to print.
- * Return: counter.
+ * Return: an integer value counter.
  */
 
 int printf_HEX_sec(unsigned int num)
@@ -16,7 +16,7 @@ int printf_HEX_sec(unsigned int num)
 
 	while (num / 16 != 0)
 	{
-		num /= 16;
+		num = num/16;
 		counter++;
 	}
 	counter++;
@@ -25,7 +25,7 @@ int printf_HEX_sec(unsigned int num)
 	for (i = 0; i < counter; i++)
 	{
 		array[i] = temp % 16;
-		temp /= 16;
+		temp = temp/16;
 	}
 	for (i = counter - 1; i >= 0; i--)
 	{

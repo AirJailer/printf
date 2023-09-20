@@ -4,7 +4,7 @@
 /**
  * printf_oct - prints an octal number.
  * @args: arguments.
- * Return: counter.
+ * Return: an integer value counter.
  */
 
 int printf_oct(va_list args)
@@ -17,7 +17,7 @@ int printf_oct(va_list args)
 
 	while (num / 8 != 0)
 	{
-		num /= 8;
+		num = num/8;
 		counter++;
 	}
 	counter++;
@@ -26,7 +26,7 @@ int printf_oct(va_list args)
 	for (i = 0; i < counter; i++)
 	{
 		array[i] = temp % 8;
-		temp /= 8;
+		temp = temp/8;
 	}
 	for (i = counter - 1; i >= 0; i--)
 	{

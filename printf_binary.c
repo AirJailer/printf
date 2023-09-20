@@ -4,7 +4,7 @@
 /**
  * printf_binary - prints a binary number.
  * @args: arguments.
- * Return: 1.
+ * Return: returns a value of 1.
  */
 
 int printf_binary(va_list args)

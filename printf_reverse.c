@@ -4,7 +4,7 @@
  * printf_reverse - function that prints a str in reverse
  * @args: type struct va_arg where is allocated printf arguments
  *
- * Return: the string
+ * Return:an integer value for the string
  */
 
 int printf_reverse(va_list args)

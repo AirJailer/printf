@@ -4,7 +4,7 @@
 /**
  * printf_pointer - prints an hexdecimal number.
  * @args: arguments.
- * Return: counter.
+ * Return: an iteger value- counter.
  */
 
 int printf_pointer(va_list args)

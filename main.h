@@ -37,6 +37,7 @@ int printf_HEX_sec(unsigned int num);
 int printf_hex(va_list args);
 int printf_oct(va_list args);
 int printf_HEX_(va_list args);
+int printf_reverse(va_list args);
 int _printf(const char *format, ...);
 
 #endif
